@@ -1,0 +1,482 @@
+@media (max-width: 479px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+    .block_head .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .block_head .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    .form .line
+    {
+        margin-bottom: 15px;
+    }
+
+    .form .input
+    {
+        font-size: 15px;
+
+        height: 50px;
+        padding: 0 20px;
+    }
+
+    .form .submit
+    {
+        height: 66px;
+    }
+
+    .form .submit_btn
+    {
+        font-size: 17px;
+        line-height: 50px;
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    header .info
+    {
+        padding: 15px 0;
+    }
+
+
+    header .logo a,
+    header .logo img
+    {
+        height: 60px;
+    }
+
+
+    header .contacts .phone
+    {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    header .contacts .callback_link
+    {
+        margin-top: 5px;
+    }
+
+
+
+    header.fixed .logo a,
+    header.fixed .logo img
+    {
+        height: 60px;
+    }
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .first_section .cont
+    {
+        padding-top: 150px;
+    }
+
+    .first_section .title
+    {
+        font-size: 31px;
+    }
+
+    .first_section .title:before
+    {
+        top: -5px;
+    }
+
+    .first_section .desc
+    {
+        font-size: 18px;
+    }
+
+    .first_section .price
+    {
+        top: -35px;
+        right: -60px;
+
+        transform: scale(.50);
+    }
+
+    .first_section .link
+    {
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+
+    .first_section .pluses
+    {
+        margin: 30px 0 -15px;
+    }
+
+    .first_section .pluses > *
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+
+
+    .about .info .text
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    .production .flex
+    {
+        margin-left: 0;
+    }
+
+    .production .flex > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .production .item
+    {
+        text-align: center;
+    }
+
+    .production .item .icon
+    {
+        justify-content: center;
+    }
+
+    .production .item1 .icon:before
+    {
+        left: 50%;
+
+        margin-left: 45px;
+    }
+
+    .production .item2 .icon:before
+    {
+        left: 50%;
+
+        margin-left: 60px;
+    }
+
+    .production .item3 .icon:before
+    {
+        left: 50%;
+
+        margin-left: 50px;
+    }
+
+    .production .item4 .icon:before
+    {
+        left: 50%;
+
+        margin-left: 50px;
+    }
+
+    .production .item5 .icon:before
+    {
+        left: 50%;
+
+        margin-left: 65px;
+    }
+
+
+    .production .item6 .icon:before
+    {
+        left: 50%;
+
+        margin-left: 82px;
+    }
+
+    .production .item6 .icon:after
+    {
+        left: 50%;
+
+        margin-left: 10px;
+    }
+
+
+    .production .link > *
+    {
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+
+
+    .products .product .info
+    {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .products .product .thumb
+    {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+        padding-bottom: 107%;
+
+        border-radius: 0 0 15px 15px;
+    }
+
+    .products .product .thumb img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        object-position: 50%;
+    }
+
+
+
+    .reviews .carousel
+    {
+        width: 100%;
+    }
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='prev']
+    {
+        left: -20px;
+    }
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='next']
+    {
+        right: -20px;
+    }
+
+    .reviews .link > *
+    {
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+
+
+    .delivery .flex > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    .faq .item .title
+    {
+        font-size: 15px;
+    }
+
+    .faq .item .data
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+
+    .has_question .form
+    {
+        padding: 25px 20px;
+    }
+
+
+
+    .contacts_info .info
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .logo,
+    footer .text,
+    footer .requisites,
+    footer .socials
+    {
+        width: 100%;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    footer .text,
+    footer .requisites,
+    footer .socials
+    {
+        margin-top: 20px;
+    }
+
+
+    footer .logo img
+    {
+        margin: 0 auto;
+    }
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+    .fancybox-slide--html .fancybox-close-small
+    {
+        top: 10px;
+        right: 10px;
+    }
+
+
+    .modal,
+    #success_modal
+    {
+        padding: 30px 20px;
+    }
+
+    .modal_desc
+    {
+        font-size: 14px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 27px;
+        line-height: 29px;
+
+        padding: 0 20px;
+    }
+
+
+
+    #about_modal .text
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    #privacy_policy_modal .text
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #privacy_policy_modal .text .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 15px;
+    }
+
+
+
+    #product_modal
+    {
+        padding-top: 30px;
+    }
+
+    #product_modal .custom_scroll
+    {
+        padding: 0 25px;
+    }
+
+    #product_modal .product_info
+    {
+        padding-top: 64px;
+    }
+
+    #product_modal .product_info .images
+    {
+        margin-bottom: 20px;
+    }
+
+    #product_modal .product_info .owl-carousel .owl-nav button.owl-prev
+    {
+        left: -25px;
+    }
+
+    #product_modal .product_info .owl-carousel .owl-nav button.owl-next
+    {
+        right: -25px;
+    }
+
+    #product_modal .product_info .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        padding: 10px 20px;
+    }
+
+    #product_modal .product_info .desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    #product_modal .product_info .features
+    {
+        font-size: 13px;
+        line-height: 15px;
+
+        margin-bottom: -15px;
+        margin-left: -20px;
+    }
+
+    #product_modal .product_info .features > *
+    {
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+
+    #product_modal .product_info .features img
+    {
+        max-height: 30px;
+        margin-right: 10px;
+    }
+
+    #product_modal .product_info .price .new
+    {
+        font-size: 22px;
+    }
+
+
+    #product_modal .calc
+    {
+        width: calc(100% + 50px);
+        margin: 85px -25px 0;
+        padding: 20px 25px 0;
+    }
+
+    #product_modal .bottom .link
+    {
+        font-size: 18px;
+        line-height: 50px;
+    }
+}
