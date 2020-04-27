@@ -119,6 +119,10 @@ $(function() {
 			})
 		}
 	})
+
+
+	// Параллакс эффект
+	parallax()
 })
 
 
@@ -129,11 +133,15 @@ $(window).scroll(function() {
 	} else {
 		$('header').removeClass('fixed')
 	}
+
+
+	// Параллакс эффект
+	parallax()
 })
 
 
+// Калькулятор
 function initCalc() {
-	// Калькулятор
 	$totalOldPriceEl   = $('.product_info .price .old span')
 	$totalPriceEl      = $('.product_info .price .new span').add('#product_modal .bottom .total_price span')
 	$totalPriceElInput = $('#product_modal .calc input[name="total_price"]')
@@ -152,5 +160,31 @@ function updateOptions(){
 		$(this).find('option[data-material="any"]').prop('disabled', false)
 
 		$('select').niceSelect('update')
+	})
+}
+
+
+
+// Параллакс эффект
+function parallax(){
+	$('.parallax.speed1').each(function(){
+		let parent = $(this).closest('section')
+		let parentOffset = parent.offset()
+
+		$(this).css('transform', 'translate3d(0px, '+ ($(window).scrollTop() - parentOffset.top)/-2 +'px, 0px)')
+	})
+
+	$('.parallax.speed2').each(function(){
+		let parent = $(this).closest('section')
+		let parentOffset = parent.offset()
+
+		$(this).css('transform', 'translate3d(0px, '+ ($(window).scrollTop() - parentOffset.top)/-3 +'px, 0px)')
+	})
+
+	$('.parallax.speed3').each(function(){
+		let parent = $(this).closest('section')
+		let parentOffset = parent.offset()
+
+		$(this).css('transform', 'translate3d(0px, '+ ($(window).scrollTop() - parentOffset.top)/-6 +'px, 0px)')
 	})
 }
