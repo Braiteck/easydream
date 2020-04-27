@@ -85,7 +85,7 @@
 
 					<div class="price">
 						<div>Цена:</div>
-						<div class="old">от 14.999 руб.</div>
+						<div class="old">от <span>14.999</span> руб.</div>
 						<div class="new">от <span>12.999</span> руб.</div>
 					</div>
 				</div>
@@ -97,16 +97,16 @@
 
 				<form action="">
 					<input type="hidden" name="total_price" value="12.999">
-					<input type="hidden" name="product_name" value="Двухъярусная">
+					<input type="hidden" name="product_name" value="Напольная">
 
 					<div class="line">
 						<div class="field">
-							<select name="">
-								<option value="0" data-price="0">Выбрать</option>
+							<select name="" id="material">
+								<option value="1" data-content="Береза <span>+0 руб.</span>" data-price="0" data-material="1" selected></option>
 
-								<option value="1" data-content="Вариант 1 <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="2" data-content="Вариант 1 <span>+2500 руб.</span>" data-price="2500" data-material="2"></option>
 
-								<option value="2" data-content="Вариант 2 <span>+3500 руб.</span>" data-price="3500">
+								<option value="3" data-content="Вариант 2 <span>+3500 руб.</span>" data-price="3500" data-material="3">
 							</select>
 
 							<div class="label">Материал</div>
@@ -117,9 +117,9 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Не нужны</option>
+								<option value="0" data-price="0" data-material="any">Не нужны</option>
 
-								<option value="1" data-content="Нужны <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Нужны <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 							</select>
 
 							<div class="label">Выдвижные ящики</div>
@@ -130,11 +130,11 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Выбрать</option>
+								<option value="0" data-price="0" data-material="any">Выбрать</option>
 
-								<option value="1" data-content="Вариант 1 <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Вариант 1 <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 
-								<option value="2" data-content="Вариант 2 <span>+3500 руб.</span>" data-price="3500">
+								<option value="2" data-content="Вариант 2 <span>+3500 руб.</span>" data-price="3500" data-material="2">
 							</select>
 
 							<div class="label">Размер</div>
@@ -145,9 +145,9 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Не нужны</option>
+								<option value="0" data-price="0" data-material="any">Не нужны</option>
 
-								<option value="1" data-content="Нужны <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Нужны <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 							</select>
 
 							<div class="label">Борта</div>
@@ -158,11 +158,11 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Выбрать</option>
+								<option value="0" data-price="0" data-material="any">Выбрать</option>
 
-								<option value="1" data-content="Вариант 1 <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Вариант 1 <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 
-								<option value="2" data-content="Вариант 2 <span>+3500 руб.</span>" data-price="3500">
+								<option value="2" data-content="Вариант 2 <span>+3500 руб.</span>" data-price="3500" data-material="2">
 							</select>
 
 							<div class="label">Цвет</div>
@@ -173,9 +173,9 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Не нужен</option>
+								<option value="0" data-price="0" data-material="any">Не нужен</option>
 
-								<option value="1" data-content="Нужен <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Нужен <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 							</select>
 
 							<div class="label">Матрас</div>
@@ -186,9 +186,9 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Не нужны</option>
+								<option value="0" data-price="0" data-material="any">Не нужны</option>
 
-								<option value="1" data-content="Нужны <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Нужны <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 							</select>
 
 							<div class="label">Выдвижные ящики</div>
@@ -199,9 +199,9 @@
 					<div class="line">
 						<div class="field">
 							<select name="">
-								<option value="0" data-price="0">Не нужна</option>
+								<option value="0" data-price="0" data-material="any">Не нужна</option>
 
-								<option value="1" data-content="Нужна <span>+2500 руб.</span>" data-price="2500"></option>
+								<option value="1" data-content="Нужна <span>+2500 руб.</span>" data-price="2500" data-material="1"></option>
 							</select>
 
 							<div class="label">Сборка</div>

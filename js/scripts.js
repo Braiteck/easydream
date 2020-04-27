@@ -6,12 +6,19 @@ $(function() {
 
 
 	// Калькулятор
-	$('body').on('change', '#product_modal .calc select', function(e) {
-		let totalPrice = $productPrice
+	$('body').on('change', '#product_modal .calc select', function() {
+		let totalOldPrice = $productOldPrice
+		let totalPrice    = $productPrice
+
+		if($(this).attr('id') === 'material'){
+			updateOptions()
+		}
 
 		$('#product_modal .calc select').each(function() {
-			totalPrice = totalPrice + $(this).find('option:selected').data('price')
+			totalOldPrice = totalOldPrice + $(this).find('option:selected').data('price')
+			totalPrice    = totalPrice + $(this).find('option:selected').data('price')
 
+			$totalOldPriceEl.text(totalOldPrice.toString().replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + '.'))
 			$totalPriceEl.text(totalPrice.toString().replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + '.'))
 			$totalPriceElInput.val(totalPrice.toString().replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + '.'))
 		})
@@ -127,7 +134,23 @@ $(window).scroll(function() {
 
 function initCalc() {
 	// Калькулятор
-	$totalPriceEl = $('.product_info .price .new span').add('#product_modal .bottom .total_price span')
+	$totalOldPriceEl   = $('.product_info .price .old span')
+	$totalPriceEl      = $('.product_info .price .new span').add('#product_modal .bottom .total_price span')
 	$totalPriceElInput = $('#product_modal .calc input[name="total_price"]')
-	$productPrice = parseInt($('.product_info .price .new span').text().replace('.', ''))
+	$productOldPrice   = parseInt($('.product_info .price .old span').text().replace('.', ''))
+	$productPrice      = parseInt($('.product_info .price .new span').text().replace('.', ''))
+
+	updateOptions()
+}
+
+function updateOptions(){
+	let currentMaterial = $('#material option:selected').data('material')
+
+	$('#product_modal .calc form select:not(#material)').each(function(){
+		$(this).find('option').prop('selected', false).prop('disabled', true)
+		$(this).find('option[data-material="'+ currentMaterial +'"]').prop('disabled', false)
+		$(this).find('option[data-material="any"]').prop('disabled', false)
+
+		$('select').niceSelect('update')
+	})
 }

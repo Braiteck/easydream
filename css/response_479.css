@@ -75,6 +75,11 @@
         margin-top: 5px;
     }
 
+    header .contacts .callback_link span
+    {
+        padding: 0 15px;
+    }
+
 
 
     header.fixed .logo a,
