@@ -1745,6 +1745,412 @@ header.fixed .logo img
 
 
 
+.how_help
+{
+    position: relative;
+    z-index: 8;
+
+    padding: 200px 0 80px;
+
+    background: #1d1385;
+}
+
+.how_help:before
+{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 200px;
+
+    content: '';
+    pointer-events: none;
+
+    background: url(../images/how_help_clouds1.png) 50% 0 no-repeat;
+}
+
+
+.how_help > .img1
+{
+    position: absolute;
+    top: 210px;
+    left: 50%;
+
+    display: block;
+
+    width: 52px;
+    height: 53px;
+    margin-left: -547px;
+
+    transition: transform .05s linear;
+    pointer-events: none;
+}
+
+.how_help > .img2
+{
+    position: absolute;
+    right: 50%;
+    bottom: 210px;
+
+    display: block;
+
+    width: 97px;
+    height: 101px;
+    margin-right: -745px;
+
+    transition: transform .05s linear;
+    pointer-events: none;
+}
+
+.how_help > .img3
+{
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+    left: 50%;
+
+    display: block;
+
+    width: 390px;
+    height: 86px;
+    margin-left: -178px;
+
+    transition: transform .05s linear;
+    pointer-events: none;
+}
+
+.how_help .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform .05s linear;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.how_help .cont
+{
+    position: relative;
+    z-index: 5;
+}
+
+
+.how_help .flex
+{
+    position: relative;
+
+    display: flex;
+
+    padding-top: 30px;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.how_help .flex:before,
+.how_help .flex:after
+{
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: 50%;
+
+    display: block;
+
+    width: 82px;
+    height: 77px;
+    margin-left: -428px;
+
+    content: '';
+    pointer-events: none;
+
+    background: url(../images/how_help_flex_line.png) 0 0 no-repeat;
+}
+
+.how_help .flex:after
+{
+    right: 50%;
+    left: auto;
+
+    margin-right: -428px;
+    margin-left: 0;
+
+    background: url(../images/how_help_flex_line2.png) 0 0 no-repeat;
+}
+
+
+.how_help .col
+{
+    position: relative;
+
+    width: calc(50% - 11px);
+    padding: 60px 35px;
+
+    border-radius: 20px;
+    background: #fff;
+}
+
+.how_help .col + .col:before
+{
+    position: absolute;
+    top: -5px;
+    left: -100px;
+
+    display: block;
+
+    width: 119px;
+    height: 351px;
+
+    content: '';
+    pointer-events: none;
+
+    background: url(../images/how_help_col_img.png) 0 0 no-repeat;
+}
+
+
+.how_help .and
+{
+    color: #3b50bd;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 75px;
+
+    position: absolute;
+    z-index: 9;
+    top: -38px;
+    left: -48px;
+
+    display: block;
+
+    width: 75px;
+    height: 75px;
+
+    text-align: center;
+
+    border-right: 50%;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.how_help .col .title
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+
+    position: absolute;
+    z-index: 5;
+}
+
+.how_help .col .title1
+{
+    line-height: 77px;
+
+    top: -40px;
+    right: -11px;
+
+    width: 346px;
+    height: 77px;
+
+    text-align: center;
+}
+
+.how_help .col .title1:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    right: 0;
+
+    display: block;
+
+    width: 346px;
+    height: 77px;
+
+    content: '';
+
+    background: url(../images/bg_how_help_title1.png) 0 0 no-repeat;
+}
+
+.how_help .col .title2
+{
+    line-height: 77px;
+
+    top: -40px;
+    left: -11px;
+
+    width: 500px;
+    height: 77px;
+    padding-left: 69px;
+}
+
+.how_help .col .title2:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    right: 0;
+
+    display: block;
+
+    width: 500px;
+    height: 77px;
+
+    content: '';
+
+    background: url(../images/bg_how_help_title2.png) 0 0 no-repeat;
+}
+
+
+.how_help .item
+{
+    font-size: 14px;
+    line-height: 24px;
+
+    position: relative;
+}
+
+.how_help .item + .item
+{
+    margin-top: 45px;
+}
+
+.how_help .item.img_left
+{
+    padding-left: 90px;
+}
+
+.how_help .item.img_right
+{
+    padding-right: 90px;
+}
+
+.how_help .item img
+{
+    position: absolute;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+.how_help .item .img1
+{
+    bottom: 0;
+    left: -45px;
+
+    width: 131px;
+    height: 210px;
+}
+
+.how_help .item .img2
+{
+    right: -45px;
+    bottom: -25px;
+
+    width: 131px;
+    height: 153px;
+}
+
+.how_help .item .img3
+{
+    top: 0;
+    bottom: 0;
+    left: -80px;
+
+    width: 152px;
+    height: 152px;
+    margin: auto;
+}
+
+.how_help .item .img4
+{
+    top: -65px;
+    right: -65px;
+
+    width: 179px;
+    height: 127px;
+}
+
+.how_help .item .img5
+{
+    bottom: -25px;
+    left: -25px;
+
+    width: 128px;
+    height: 99px;
+}
+
+.how_help .item .img6
+{
+    right: -55px;
+    bottom: -15px;
+
+    width: 124px;
+    height: 131px;
+}
+
+.how_help .item .img7
+{
+    top: -15px;
+    left: -10px;
+
+    width: 92px;
+    height: 90px;
+}
+
+.how_help .item .img8
+{
+    right: -60px;
+    bottom: -84px;
+
+    width: 180px;
+    height: 205px;
+}
+
+.how_help .item .name
+{
+    color: #3b50bd;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: normal;
+
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+
+    -webkit-touch-callout: text;
+}
+
+.how_help .item .desc
+{
+    margin-top: 10px;
+
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+
+    -webkit-touch-callout: text;
+}
+
+
+
 .production
 {
     position: relative;
@@ -1765,7 +2171,7 @@ header.fixed .logo img
     display: block;
 
     width: 100%;
-    height: 200px;
+    height: 127px;
 
     content: '';
     pointer-events: none;

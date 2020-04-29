@@ -150,6 +150,54 @@
 
 
 
+    .how_help
+    {
+        padding-top: 150px;
+        padding-bottom: 10px;
+    }
+
+
+    .how_help .col .title
+    {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+
+    .how_help .item
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .how_help .item + .item
+    {
+        margin-top: 25px;
+    }
+
+    .how_help .item.img_left,
+    .how_help .item.img_right
+    {
+        padding: 0;
+    }
+
+    .how_help .item img
+    {
+        display: none;
+    }
+
+    .how_help .item .name
+    {
+        font-size: 16px;
+    }
+
+    .how_help .item .desc
+    {
+        margin-top: 5px;
+    }
+
+
+
     .production .flex
     {
         margin-left: 0;

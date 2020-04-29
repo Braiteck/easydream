@@ -1,8 +1,8 @@
 @media (max-width: 1249px)
 {
     /*---------------
-	    Main styles
-	---------------*/
+        Main styles
+    ---------------*/
     .block_head
     {
         margin-bottom: 40px;
@@ -58,8 +58,8 @@
 
 
     /*---------------
-		Header
-	---------------*/
+        Header
+    ---------------*/
     header .info
     {
         padding: 30px 0;
@@ -96,8 +96,8 @@
 
 
     /*---------------
-		Main section
-	---------------*/
+        Main section
+    ---------------*/
     .first_section:before
     {
         display: none;
@@ -211,6 +211,62 @@
         line-height: 23px;
 
         margin-top: 25px;
+    }
+
+
+
+    .how_help
+    {
+        padding-bottom: 50px;
+    }
+
+
+    .how_help > .img3
+    {
+        bottom: -50px;
+    }
+
+
+    .how_help .col
+    {
+        padding: 40px 25px;
+    }
+
+    .how_help .title
+    {
+        font-size: 28px;
+    }
+
+    .how_help .item
+    {
+        line-height: 20px;
+    }
+
+    .how_help .item + .item
+    {
+        margin-top: 35px;
+    }
+
+    .how_help .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .how_help .item .img4
+    {
+        right: -50px;
+    }
+
+    .how_help .item .img6
+    {
+        right: -35px;
+    }
+
+    .how_help .item .img8
+    {
+        right: -40px;
+        bottom: -82px;
     }
 
 
@@ -394,8 +450,8 @@
 
 
     /*---------------
-		Footer
-	---------------*/
+        Footer
+    ---------------*/
     footer
     {
         padding: 60px 0 50px;
@@ -417,8 +473,8 @@
 
 
     /*---------------
-		PopUp
-	---------------*/
+        PopUp
+    ---------------*/
     .modal
     {
         width: 650px;

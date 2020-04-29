@@ -172,6 +172,77 @@
 
 
 
+    .how_help
+    {
+        padding-top: 175px;
+        padding-bottom: 10px;
+    }
+
+    .how_help > .img3
+    {
+        display: none;
+    }
+
+
+    .how_help .flex:before,
+    .how_help .flex:after
+    {
+        display: none;
+    }
+
+
+    .how_help .col
+    {
+        padding: 0 20px 30px;
+    }
+
+    .how_help .col .title
+    {
+        font-size: 24px;
+        line-height: 26px;
+
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 13px 20px;
+    }
+
+    .how_help .item + .item
+    {
+        margin-top: 30px;
+    }
+
+    .how_help .item .name
+    {
+        font-size: 17px;
+    }
+
+    .how_help .item .img4
+    {
+        top: -25px;
+    }
+
+    .how_help .item .img5
+    {
+        bottom: -10px;
+        left: -40px;
+    }
+
+    .how_help .item .img8
+    {
+        right: -30px;
+        bottom: -30px;
+
+        width: 130px;
+        height: 148px;
+    }
+
+
+
+    .production
+    {
+        padding-top: 130px;
+    }
 
     .production .flex
     {
