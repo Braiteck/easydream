@@ -24,6 +24,12 @@ $(function() {
 		})
 	})
 
+	$('body').on('click', '#product_modal .product_info .cal_link', function(e) {
+		e.preventDefault()
+
+		$('.custom_scroll_wrap').mCustomScrollbar('scrollTo', '#calc')
+	})
+
 
 	// Валидация
 	$questionForm = $('.has_question .form').parsley({

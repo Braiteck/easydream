@@ -508,6 +508,11 @@
         padding: 15px 30px;
     }
 
+    #product_modal .product_info .cal_link
+    {
+        display: none;
+    }
+
     #product_modal .bottom .link
     {
         font-size: 22px;
