@@ -55,13 +55,19 @@
     header .logo a,
     header .logo img
     {
-        height: 80px;
+        height: 75px;
     }
 
 
     header .menu
     {
-        display: none;
+        padding-top: 130px;
+    }
+
+    header .mob_menu_link
+    {
+        margin-right: auto;
+        margin-left: auto;
     }
 
 

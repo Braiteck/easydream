@@ -56,18 +56,28 @@
         padding: 15px 0;
     }
 
+    header .info .cont.flex
+    {
+        padding: 0 15px;
+    }
+
+
+    header .logo
+    {
+        margin-right: 0;
+    }
 
     header .logo a,
     header .logo img
     {
-        height: 60px;
+        height: 55px;
     }
 
 
     header .contacts .phone
     {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 16px;
     }
 
     header .contacts .callback_link
@@ -77,15 +87,58 @@
 
     header .contacts .callback_link span
     {
-        padding: 0 15px;
+        font-size: 12px;
+        line-height: 28px;
+
+        padding: 0 13px;
+    }
+
+
+    header .menu
+    {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    header .mob_menu_link
+    {
+        width: 42px;
+        height: 42px;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    header .mob_menu_link span + span
+    {
+        margin-top: 4px;
+    }
+
+    header .mob_menu_link.active span:nth-child(1)
+    {
+        top: 6px;
+    }
+
+    header .mob_menu_link.active span:nth-child(3)
+    {
+        top: -6px;
     }
 
 
 
+    header.fixed .info
+    {
+        padding: 15px 0;
+    }
+
     header.fixed .logo a,
     header.fixed .logo img
     {
-        height: 60px;
+        height: 55px;
+    }
+
+    header.fixed .menu
+    {
+        padding-top: 100px;
     }
 
 

@@ -53,6 +53,11 @@
     }
 
 
+    header .logo
+    {
+        margin-right: auto;
+    }
+
     header .logo a,
     header .logo img
     {
@@ -62,7 +67,81 @@
 
     header .menu
     {
-        display: none;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        visibility: hidden;
+
+        width: 100%;
+        padding: 150px 20px 50px;
+
+        transition: .2s linear;
+        pointer-events: none;
+
+        opacity: 0;
+        background: #fff;
+    }
+
+    header .menu.show
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+    header .menu:after
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 58px;
+
+        content: '';
+        pointer-events: none;
+
+        background: url(../images/header_clouds.png) 50% 0 no-repeat;
+    }
+
+    header .menu .item
+    {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .menu .item + .item
+    {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    header .menu .item > *
+    {
+        font-size: 18px;
+    }
+
+    header .mob_menu_link
+    {
+        display: flex;
+    }
+
+
+    header .contacts
+    {
+        order: 5;
     }
 
 
@@ -70,6 +149,11 @@
     header.fixed .logo img
     {
         height: 70px;
+    }
+
+    header.fixed .menu
+    {
+        padding-top: 120px;
     }
 
 

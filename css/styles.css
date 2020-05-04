@@ -992,7 +992,7 @@ body.lock
 header
 {
     position: absolute;
-    z-index: 99;
+    z-index: 101;
     top: 0;
     left: 0;
 
@@ -1004,7 +1004,7 @@ header
 header:after
 {
     position: absolute;
-    z-index: 9;
+    z-index: -2;
     top: 100%;
     left: 0;
 
@@ -1193,6 +1193,69 @@ header .contacts .callback_link:hover
 
 
 
+header .mob_menu_link
+{
+    display: none;
+
+    width: 52px;
+    height: 52px;
+    margin-right: 30px;
+    padding: 13px;
+
+    cursor: pointer;
+    transition: background .2s linear;
+
+    border: none;
+    border-radius: 50%;
+    background: none;
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .mob_menu_link span
+{
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    transition: .2s linear;
+
+    background: #14a;
+}
+
+header .mob_menu_link span + span
+{
+    margin-top: 5px;
+}
+
+header .mob_menu_link.active span:nth-child(1)
+{
+    top: 7px;
+
+    transform: rotate(45deg);
+}
+
+header .mob_menu_link.active span:nth-child(2)
+{
+    opacity: 0;
+}
+
+header .mob_menu_link.active span:nth-child(3)
+{
+    top: -7px;
+
+    transform: rotate(-45deg);
+}
+
+
+
 header.fixed
 {
     position: fixed;
@@ -1216,6 +1279,16 @@ header.fixed .logo a,
 header.fixed .logo img
 {
     height: 99px;
+}
+
+header.fixed .mob_menu_link
+{
+    background: #14a;
+}
+
+header.fixed .mob_menu_link span
+{
+    background: #fff;
 }
 
 

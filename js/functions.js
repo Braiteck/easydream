@@ -39,6 +39,10 @@ $(function() {
 			addOffset = $(this).data('offset')
 		}
 
+		$('header .mob_menu_link').removeClass('active')
+		$('header .menu').removeClass('show')
+		$('.overlay').fadeOut(300)
+
 		$('html, body').stop().animate({
 			scrollTop: $(href).offset().top - addOffset
 		}, 1000)
@@ -141,21 +145,25 @@ $(function() {
 
 
 	// Моб. меню
-	$('.mob_header .mob_menu_link').click(function(e) {
+	$('header .mob_menu_link').click(function(e) {
 		e.preventDefault()
 
-		$(this).addClass('active')
-		//$('body').addClass('lock')
-		$('header').addClass('show')
-		$('.overlay').fadeIn(300)
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('header .menu').removeClass('show')
+			$('.overlay').fadeOut(300)
+		} else {
+			$(this).addClass('active')
+			$('header .menu').addClass('show')
+			$('.overlay').fadeIn(300)
+		}
 	})
 
-	$('header .close, .overlay').click(function(e) {
+	$('.overlay').click(function(e) {
 		e.preventDefault()
 
-		$('.mob_header .mob_menu_link').removeClass('active')
-		//$('body').removeClass('lock')
-		$('header').removeClass('show')
+		$('header .mob_menu_link').removeClass('active')
+		$('header .menu').removeClass('show')
 		$('.overlay').fadeOut(300)
 	})
 })
