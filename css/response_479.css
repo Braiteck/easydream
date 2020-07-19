@@ -567,6 +567,11 @@
         margin-right: 10px;
     }
 
+    #product_modal .product_info .consult
+    {
+        font-size: 14px;
+    }
+
     #product_modal .product_info .price .new
     {
         font-size: 22px;

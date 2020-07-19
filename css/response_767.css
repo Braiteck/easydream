@@ -701,6 +701,51 @@
     }
 
 
+    #product_modal .product_info .features2
+    {
+        margin-top: 5px;
+    }
+
+
+    #product_modal .product_info .information > *
+    {
+        width: calc(50% - 3px);
+    }
+
+    #product_modal .product_info .information .link
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #product_modal .product_info .information > *:nth-child(2n+1) .tooltip
+    {
+        left: 29px;
+    }
+
+    #product_modal .product_info .information > *:nth-child(2n+1) .tooltip:before
+    {
+        right: auto;
+        left: 20px;
+    }
+
+    #product_modal .product_info .information > *:nth-child(2n) .tooltip
+    {
+        right: 29px;
+        left: auto;
+    }
+
+    #product_modal .product_info .information > *:nth-child(2n) .tooltip:before
+    {
+        right: 20px;
+        left: auto;
+    }
+
+
     #product_modal .calc form .line
     {
         width: 100%;

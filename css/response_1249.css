@@ -500,6 +500,17 @@
 
 
 
+    #product_modal .product_info .images
+    {
+        max-width: calc(100% - 380px);
+    }
+
+
+    #product_modal .custom_scroll
+    {
+        padding-right: 45px;
+    }
+
     #product_modal .product_info .name
     {
         font-size: 26px;
