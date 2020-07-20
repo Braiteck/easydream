@@ -128,7 +128,7 @@ $(function() {
 					$(this).mCustomScrollbar({
 						setHeight: $(this).innerHeight(),
 						axis: 'y',
-						scrollInertia: 800
+						scrollInertia: 1500
 					})
 				})
 			}

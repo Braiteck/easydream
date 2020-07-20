@@ -2843,6 +2843,16 @@ header.fixed .mob_menu_link span
     margin-right: 10px;
 }
 
+
+.products .product .features2
+{
+    font-size: 13px;
+    line-height: 21px;
+
+    margin-top: 15px;
+}
+
+
 .products .product .price
 {
     color: #3b50bd;
